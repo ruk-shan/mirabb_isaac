@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="eoat" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="boxSupport_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="boxSupport_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="boxSupport_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="suctionLifter_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="suctionLifter_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="suctionLifter_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="suction_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="suction_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="suction_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="padRotate_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="padRotate_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="padRotate_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<robot name="eoat" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find eoat_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find eoat_description)/urdf/eoat.trans" />
+<xacro:include filename="$(find eoat_description)/urdf/eoat.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0013655188721125974 -0.09999111481847915 0.06942952989988299" rpy="0 0 0"/>
+    <mass value="15.51108141594419"/>
+    <inertia ixx="0.275049" iyy="0.112146" izz="0.25806" ixy="0.008744" iyz="-0.02779" ixz="-6.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LARGE_PAD_LIFTER_1">
+  <inertial>
+    <origin xyz="2.739799308567985e-07 -0.01887908495888596 0.01569535162540217" rpy="0 0 0"/>
+    <mass value="2.5776810090097073"/>
+    <inertia ixx="0.016363" iyy="0.021404" izz="0.019622" ixy="-0.0" iyz="0.003611" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.001678 0.260502 -0.133561" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/LARGE_PAD_LIFTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.001678 0.260502 -0.133561" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/LARGE_PAD_LIFTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="SMALL_PAD_LIFTER_1">
+  <inertial>
+    <origin xyz="0.038585639133993 0.03725443859840258 0.12440700695971876" rpy="0 0 0"/>
+    <mass value="5.131967588982711"/>
+    <inertia ixx="0.01009" iyy="0.01215" izz="0.009503" ixy="5.5e-05" iyz="0.001465" ixz="-1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.040088 0.062833 -0.075541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/SMALL_PAD_LIFTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_red"/>
+  </visual>
+  <collision>
+    <origin xyz="0.040088 0.062833 -0.075541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/SMALL_PAD_LIFTER_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="SMALL_PAD_1">
+  <inertial>
+    <origin xyz="-0.03897023151560615 -0.00026688633084927076 0.12961367871119145" rpy="0 0 0"/>
+    <mass value="7.67930271069137"/>
+    <inertia ixx="0.021317" iyy="0.028823" izz="0.037858" ixy="-1e-05" iyz="-2.1e-05" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037322 0.004833 -0.148202" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/SMALL_PAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.037322 0.004833 -0.148202" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/SMALL_PAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LARGE_PAD_1">
+  <inertial>
+    <origin xyz="0.07995131190356848 -0.13296840070700255 0.005166199269273419" rpy="0 0 0"/>
+    <mass value="11.366258677174615"/>
+    <inertia ixx="0.072156" iyy="0.030353" izz="0.089017" ixy="-0.0" iyz="0.002558" ixz="-2.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.081678 0.142833 -0.210041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/LARGE_PAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.081678 0.142833 -0.210041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/LARGE_PAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="-0.04819469681953277 0.03230748663147348 -0.004147639356130328" rpy="0 0 0"/>
+    <mass value="3.034444752554033"/>
+    <inertia ixx="0.00224" iyy="0.003128" izz="0.004062" ixy="1e-06" iyz="-1e-06" ixz="0.000132"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.048322 0.407133 -0.165041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="polymide_kapton"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.048322 0.407133 -0.165041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://eoat_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="boxSupport_joint" type="prismatic">
+  <origin xyz="0.08 -0.117669 -0.07648" rpy="0 0 0"/>
+  <parent link="LARGE_PAD_1"/>
+  <child link="LARGE_PAD_LIFTER_1"/>
+  <axis xyz="0.0 -0.008691 -0.999962"/>
+  <limit upper="0.04" lower="-0.01" effort="100" velocity="100"/>
+</joint>
+
+<joint name="suctionLifter_joint" type="prismatic">
+  <origin xyz="-0.040088 -0.062833 0.075541" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="SMALL_PAD_LIFTER_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+  <limit upper="0.0" lower="-0.05" effort="100" velocity="100"/>
+</joint>
+
+<joint name="suction_joint" type="prismatic">
+  <origin xyz="0.07741 0.058 0.072661" rpy="0 0 0"/>
+  <parent link="SMALL_PAD_LIFTER_1"/>
+  <child link="SMALL_PAD_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+  <limit upper="0.05" lower="-0.015" effort="100" velocity="100"/>
+</joint>
+
+<joint name="padRotate_joint" type="revolute">
+  <origin xyz="-0.081678 -0.142833 0.210041" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LARGE_PAD_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.0" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="cxamera_joint " type="fixed">
+  <origin xyz="0.048322 -0.407133 0.165041" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+</robot>

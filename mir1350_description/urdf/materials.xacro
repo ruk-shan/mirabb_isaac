@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<robot name="mir1350" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="opaque156168171">
+  <color rgba="0.611764705882353 0.6588235294117647 0.6705882352941176 1.0"/>
+</material>
+<material name="powder_coat_rough_green">
+  <color rgba="0.26666666666666666 0.5882352941176471 0.2823529411764706 0.0"/>
+</material>
+<material name="powder_coat_rough_blue_1">
+  <color rgba="0.5450980392156862 0.5686274509803921 0.7490196078431373 1.0"/>
+</material>
+<material name="opaque223223223">
+  <color rgba="0.8745098039215686 0.8745098039215686 0.8745098039215686 1.0"/>
+</material>
+<material name="paint_metallic_red">
+  <color rgba="0.7686274509803922 0.20784313725490197 0.15294117647058825 1.0"/>
+</material>
+<material name="polymide_kapton">
+  <color rgba="0.7843137254901961 0.5568627450980392 0.027450980392156862 1.0"/>
+</material>
+<material name="paint_metal_flake_green">
+  <color rgba="0.26666666666666666 0.5882352941176471 0.2823529411764706 0.0"/>
+</material>
+<material name="paint_metallic_green_1">
+  <color rgba="0.7019607843137254 0.7098039215686275 0.19607843137254902 1.0"/>
+</material>
+<material name="powder_coat_rough_blue">
+  <color rgba="0.18823529411764706 0.23137254901960785 0.5882352941176471 0.0"/>
+</material>
+<material name="paint_metal_flake_black">
+  <color rgba="0.34901960784313724 0.34901960784313724 0.34901960784313724 0.0"/>
+</material>
+<material name="paint_metallic_yellow_2">
+  <color rgba="0.7019607843137254 0.6823529411764706 0.6352941176470588 1.0"/>
+</material>
+<material name="paint_metallic_dark_grey">
+  <color rgba="0.34901960784313724 0.34901960784313724 0.34901960784313724 1.0"/>
+</material>
+<material name="paint_metal_flake_yellow">
+  <color rgba="0.9098039215686274 0.6784313725490196 0.13725490196078433 0.0"/>
+</material>
+
+</robot>

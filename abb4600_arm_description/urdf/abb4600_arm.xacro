@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="abb4600_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find abb4600_arm_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find abb4600_arm_description)/urdf/abb4600_arm.trans" />
+<xacro:include filename="$(find abb4600_arm_description)/urdf/abb4600_arm.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.5388065719683329 0.0003632766666347196 0.6099645348312986" rpy="0 0 0"/>
+    <mass value="237.71328449710663"/>
+    <inertia ixx="3.322456" iyy="6.746895" izz="9.112071" ixy="0.030784" iyz="0.001141" ixz="0.455197"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="0.07703823314609848 0.024690140056912023 0.24069844675200514" rpy="0 0 0"/>
+    <mass value="332.94668738623227"/>
+    <inertia ixx="8.732817" iyy="11.378243" izz="9.105966" ixy="-0.760548" iyz="-0.812185" ixz="-2.349543"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.63 -0.0 -0.687" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.63 -0.0 -0.687" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="8.11885680672697e-05 -0.04807041025187958 0.3967756795501174" rpy="0 0 0"/>
+    <mass value="220.41574953890478"/>
+    <inertia ixx="17.032393" iyy="17.64881" izz="1.263078" ixy="-0.000225" iyz="0.57807" ixz="0.002216"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.805 0.1225 -1.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.805 0.1225 -1.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="0.04071239379184699 0.19846613160738472 0.11876191185100127" rpy="0 0 0"/>
+    <mass value="400.49713290737077"/>
+    <inertia ixx="8.894012" iyy="10.88805" izz="8.946828" ixy="0.577243" iyz="-0.110796" ixz="-0.921523"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.805 0.1492 -1.9225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.805 0.1492 -1.9225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="0.39313278775216975 -0.0019755165564121586 -0.0028460250959141398" rpy="0 0 0"/>
+    <mass value="87.24410051263554"/>
+    <inertia ixx="0.418056" iyy="3.624528" izz="3.763023" ixy="0.044331" iyz="0.000226" ixz="0.017987"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.1451 -0.0 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.1451 -0.0 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="-0.0010508027520477192 -0.06745153171005737 0.00040028149794890666" rpy="0 0 0"/>
+    <mass value="11.796293100629127"/>
+    <inertia ixx="0.023766" iyy="0.024654" izz="0.026174" ixy="-6e-06" iyz="-4e-05" ixz="-0.000134"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.765 -0.064 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque215215215"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.765 -0.064 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="0.04834499414174176 -0.00028927280581593517 0.00013855618719471607" rpy="0 0 0"/>
+    <mass value="2.0887598324758585"/>
+    <inertia ixx="0.002956" iyy="0.002242" izz="0.002257" ixy="6e-06" iyz="-2.1e-05" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.83 -0.0 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque128128128"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.83 -0.0 -2.0975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb4600_arm_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint1" type="continuous">
+  <origin xyz="0.63 0.0 0.687" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="joint2" type="continuous">
+  <origin xyz="0.175 -0.1225 0.3355" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="joint3" type="continuous">
+  <origin xyz="0.0 -0.0267 0.9" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="joint4" type="continuous">
+  <origin xyz="0.3401 0.1492 0.175" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="joint5" type="continuous">
+  <origin xyz="0.6199 0.064 0.0" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="joint6" type="continuous">
+  <origin xyz="0.065 -0.064 0.0" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+</robot>
